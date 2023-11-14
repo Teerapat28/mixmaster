@@ -1,12 +1,14 @@
 import React from "react";
-import { Link , Outlet} from "react-router-dom";
-
+import { Link, Outlet } from "react-router-dom";
+import Navbar from "../components/Navbar";
 const HomeLayout = () => {
   return (
-    <div>
-      <nav>Navbar</nav>
-      <Outlet/>
-    </div>
+    <>
+      <Navbar />
+      <section className="page">
+        <Outlet />
+      </section>
+    </>
   );
 };
 
